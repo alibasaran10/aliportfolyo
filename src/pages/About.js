@@ -5,10 +5,10 @@ import './About.css';
 const About = () => {
     return (
         <div className="about-container">
-            <h1>About Me</h1>
+            <h1>Hakkımda</h1>
             <p>
-                I am a passionate developer with experience in building modern web applications.
-                I enjoy creating clean and user-friendly interfaces.
+                Sevgilisini çok seven alık bir aşık. Bu kadarını bilseniz yeto.
+                Gerisini ve her şeyi sevgilim bilir.
             </p>
         </div>
     );

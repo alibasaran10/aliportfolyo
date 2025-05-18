@@ -2,16 +2,16 @@
 import React from 'react';
 import './Skills.css';
 
-const skills = [
-    'JavaScript', 'React', 'Node.js', 'HTML5', 'CSS3', 'Git', 'REST APIs', 'SQL', 'Python'
+const Yeteneklerim = [
+    'Onun Neşe Kaynağı Olmak', 'Her Daim Onunla Konuşabilmek ', 'Ondan Başkasını Görmemek', 'Sürekli Onunla Olduğuma Sevinmek', 'Onunla Her Markete girebilmek', 'Müstakbel Sevgilisi Olmak(10 Yıla da Kocası)', 'Her Yeteneğim de Her Şeyim de Ona Çıkıyor İşte Anlayın.'
 ];
 
 const Skills = () => {
     return (
         <div className="skills-container">
-            <h1>My Skills</h1>
+            <h1>Yeteneklerim</h1>
             <ul className="skills-list">
-                {skills.map(skill => (
+                {Yeteneklerim.map(skill => (
                     <li key={skill} className="skill-item">{skill}</li>
                 ))}
             </ul>

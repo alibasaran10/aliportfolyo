@@ -6,7 +6,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
     return (
         <nav className="navbar" style={{backgroundColor:'#121212', padding:'1rem'}}>
             <div className="navbar-logo" style={{color:'#00bcd4', fontWeight:'bold', fontSize:'1.5rem', cursor:'pointer'}}>
-                MyPortfolio
+                Ali Başaran
             </div>
             <ul className="navbar-links" style={{listStyle:'none', display:'flex', gap:'1.5rem', marginTop:0}}>
                 {links.map(link => (

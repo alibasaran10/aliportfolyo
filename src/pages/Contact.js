@@ -21,17 +21,17 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
-            <h1>Contact Me</h1>
+            <h1>İletişim</h1>
             <form onSubmit={handleSubmit} className="contact-form">
                 <label>
-                    Name
+                    Ad-Soyad
                     <input
                         type="text"
-                        name="name"
+                        name="Ad Soyad"
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="Your name" />
+                        placeholder="Ad Soyad" />
                 </label>
                 <label>
                     Email
@@ -41,16 +41,16 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        placeholder="you@example.com" />
+                        placeholder="ornek@gmail.com" />
                 </label>
                 <label>
                     Message
                     <textarea
-                        name="message"
+                        name="Mesaj"
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        placeholder="Write your message here..." />
+                        placeholder="Mesajınızı buraya yazınız..." />
                 </label>
                 <button type="submit">Send</button>
             </form>
