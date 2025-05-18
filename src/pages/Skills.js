@@ -3,7 +3,7 @@ import React from 'react';
 import './Skills.css';
 
 const Yeteneklerim = [
-    'Onun Neşe Kaynağı Olmak', 'Her Daim Onunla Konuşabilmek ', 'Ondan Başkasını Görmemek', 'Sürekli Onunla Olduğuma Sevinmek', 'Onunla Her Markete girebilmek', 'Müstakbel Sevgilisi Olmak(10 Yıla da Kocası)', 'Her Yeteneğim de Her Şeyim de Ona Çıkıyor İşte Anlayın.'
+    '111', '2222', '3', '4', '5', '6',
 ];
 
 const Skills = () => {

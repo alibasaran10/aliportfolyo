@@ -7,8 +7,7 @@ const About = () => {
         <div className="about-container">
             <h1>Hakkımda</h1>
             <p>
-                Sevgilisini çok seven alık bir aşık. Bu kadarını bilseniz yeto.
-                Gerisini ve her şeyi sevgilim bilir.
+                Bilgisayar mühendisi 2.sınıf öğrencisi Ali...
             </p>
         </div>
     );
