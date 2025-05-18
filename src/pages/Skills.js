@@ -1,17 +1,22 @@
+// src/pages/Skills.js
 import React from 'react';
 import './Skills.css';
 
-function Skills() {
+const skills = [
+    'JavaScript', 'React', 'Node.js', 'HTML5', 'CSS3', 'Git', 'REST APIs', 'SQL', 'Python'
+];
+
+const Skills = () => {
     return (
-        <section className="skills">
-            <h2>Neler Yapabilirim?</h2>
-            <ul>
-                <li>Web Geliştirme</li>
-                <li>Veri Analizi</li>
-                <li>Çiftlik Otomasyonları</li>
+        <div className="skills-container">
+            <h1>My Skills</h1>
+            <ul className="skills-list">
+                {skills.map(skill => (
+                    <li key={skill} className="skill-item">{skill}</li>
+                ))}
             </ul>
-        </section>
+        </div>
     );
-}
+};
 
 export default Skills;

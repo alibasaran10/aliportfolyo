@@ -1,3 +1,55 @@
-.portfolio {
+.portfolio-container {
+    background-color: #121212;
+    color: #eee;
+    min-height: calc(100vh - 60px);
     padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio-container h1 {
+    color: #00bcd4;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h2 {
+    margin-bottom: 0.8rem;
+    color: #00bcd4;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    color: #00bcd4;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1.5px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.project-link:hover {
+    border-color: #00bcd4;
 }

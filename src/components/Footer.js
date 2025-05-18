@@ -1,12 +1,22 @@
-import React from 'react';
-import './Footer.css';
+document.addEventListener('DOMContentLoaded', function() {
+    // Footer için genellikle fazla JavaScript gerekmez
+    // Ancak ek interaktif özellikler eklenebilir
 
-function Footer() {
-    return (
-        <footer>
-            <p>&copy; 2025 Ali Başaran</p>
-        </footer>
-    );
-}
+    // Örneğin: Yılı otomatik güncelleme
+    const yearSpan = document.querySelector('.footer-bottom p');
+    if (yearSpan) {
+        const currentYear = new Date().getFullYear();
+        yearSpan.innerHTML = yearSpan.innerHTML.replace(/2023|Yıl/g, currentYear);
+    }
 
-export default Footer;
+    // Sosyal medya linklerine hover efekti
+    const socialLinks = document.querySelectorAll('.social-links a');
+    socialLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+        });
+        link.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});

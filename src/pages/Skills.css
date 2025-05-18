@@ -1,8 +1,38 @@
-.skills {
+.skills-container {
+    background-color: #121212;
+    color: #eee;
+    min-height: calc(100vh - 60px);
     padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.skills ul {
-    list-style: disc;
-    padding-left: 2rem;
+.skills-container h1 {
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #222;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
+
+.skill-item:hover {
+    background-color: #00bcd4;
+    color: #121212;
 }

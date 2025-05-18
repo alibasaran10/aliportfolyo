@@ -1,13 +1,17 @@
+// src/pages/About.js
 import React from 'react';
 import './About.css';
 
-function About() {
+const About = () => {
     return (
-        <section className="about">
-            <h2>Ben Kimim?</h2>
-            <p>Bilgisayar mühendisliği öğrencisiyim, aynı zamanda çiftlikte çalışıyorum.</p>
-        </section>
+        <div className="about-container">
+            <h1>About Me</h1>
+            <p>
+                I am a passionate developer with experience in building modern web applications.
+                I enjoy creating clean and user-friendly interfaces.
+            </p>
+        </div>
     );
-}
+};
 
 export default About;

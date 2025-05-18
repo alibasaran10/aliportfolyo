@@ -1,6 +1,110 @@
-footer {
-    background: #222;
-    color: white;
-    padding: 1rem;
+:root {
+    --primary-color: #ff6b6b; /* Ana renk */
+    --text-color: #f8f9fa; /* Metin rengi */
+    --bg-color: #1a1a2e; /* Arkaplan rengi (koyu mod) */
+    --bg-color-secondary: #16213e; /* İkincil arkaplan */
+}
+
+.light-mode {
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+    --bg-color-secondary: #e9ecef;
+}/* Footer Temel Stilleri */
+.footer {
+    background-color: var(--bg-color-secondary);
+    padding: 60px 0 20px;
+    color: var(--text-color);
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer İçerik */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.footer-about p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Sosyal Medya Linkleri */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Footer Linkleri */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* İletişim Bilgileri */
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-contact i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+/* Footer Alt Kısım */
+.footer-bottom {
     text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
 }

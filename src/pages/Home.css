@@ -1,4 +1,23 @@
-.home {
-    text-align: center;
+.home-container {
+    background-color: #121212;
+    color: #eee;
+    min-height: calc(100vh - 60px); /* Navbar yüksekliği çıkarıldı */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
     padding: 2rem;
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00bcd4;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    max-width: 600px;
 }
