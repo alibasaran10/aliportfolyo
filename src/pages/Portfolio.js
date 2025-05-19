@@ -1,21 +1,24 @@
 import React from 'react';
 import './Portfolio.css';
+import Project1 from '../Assets/Portfolyo-2.png';
+import Project2 from '../Assets/Portfolyo-3.png';
+import Project3 from '../Assets/Portfolyo-4.jpg';
 
 const projects = [
     {
         title: 'Çiftlik Takip Sistemi',
         description: 'Python ve SQLite veri tabanı kullanarak tasarladığım çiftlik takip sistemi uygulaması.',
-        image: 'foto1.jpg', // buraya kendi görsel uzantını ekleyebilirsin
+        image: Project1,
     },
     {
         title: 'Word Tasarım Uygulaması',
         description: 'Python ve QtDesigner kullanarak Word benzeri uygulama tasarladım.',
-        image: 'foto2.jpg',
+        image: Project2,
     },
     {
         title: 'Arduino ile Tarım Robotu',
         description: 'Arduino ve Motor sürücüler kullanarak grup halinde tasarladığımız Tarım Robotu.',
-        image: 'foto3.jpg',
+        image: Project3,
     },
 ];
 
@@ -26,12 +29,11 @@ function Portfolio() {
             <div className="project-grid">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>
-                        <div className="image-placeholder">
-                            {/* Buraya <img src={project.image} alt={project.title} /> eklersen çalışır */}
-                            <span>Görsel: {project.image}</span>
+                        <img src={project.image} alt={project.title} className="project-img" />
+                        <div className="project-info">
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
                         </div>
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
                     </div>
                 ))}
             </div>

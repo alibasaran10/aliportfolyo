@@ -16,7 +16,7 @@ const SocialLinks = () => {
         {
             id: 3,
             icon: <FaInstagram />,
-            url: "https://instagram.com/kullaniciAdin",
+            url: "https://instagram.com/basaran_tarim_",
         },
     ];
 
