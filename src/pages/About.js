@@ -9,9 +9,12 @@ const About = () => {
             <div className="about-content">
                 <div className="about-text">
                     <p>
-                        Merhaba, ben Ali Başaran. 6 Aralık 2004 tarihinde Balıkesir'de doğdum.
+                        Merhaba, ben Ali Başaran 6 Aralık 2004 tarihinde Balıkesir'de doğdum.
                         Balıkesir Üniversitesi Bilgisayar Mühendisliği 2.Sınıf öğrencisiyim.
-                        Bilgisayarlara, sürekli gelişen teknolojiye ve bunların yanında tarıma ilgiliyim.
+                        Bilgisayarlara, sürekli gelişen teknolojiye ve bunların yanında tarıma
+                        ilgiliyim. Okuduğum ve yaşadığım şehir olan Balıkesir'de aynı zamanda
+                        aile işletmemizi yönetiyorum. Çiftlikte çalışmamın yanı sıra sosyal
+                        medya platformum içinde içerikler üretiyorum ve derslerimle ilgileniyorum.
                         Amacım; öğrendiklerimle yeni şeyler üretebilmek, var olanı geliştirmek ve
                         ilgi duyduğum tarıma da teknolojiyi en faydalı şekilde entegre etmek.
                     </p>
