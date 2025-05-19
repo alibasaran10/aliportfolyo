@@ -11,7 +11,7 @@ const SocialLinks = () => {
         {
             id: 2,
             icon: <FaLinkedin />,
-            url: "https://linkedin.com/in/kullaniciAdin",
+            url: "https://www.linkedin.com/in/ali-basaran-a73b02366/",
         },
         {
             id: 3,

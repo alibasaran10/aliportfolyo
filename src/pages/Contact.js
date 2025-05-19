@@ -45,7 +45,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                 />
-                <button type="submit">Gönder Düğmesi</button>
+                <button type="submit">Gönder</button>
             </form>
 
             {/* Sosyal medya linkleri buraya eklendi */}

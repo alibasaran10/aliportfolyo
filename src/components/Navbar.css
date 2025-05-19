@@ -9,12 +9,18 @@
     justify-content: center;
     z-index: 100;
     box-shadow: 0 2px 10px #00bcd4aa;
+    padding: 0 1rem;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap; /* mobil uyum için */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar a {
@@ -24,6 +30,7 @@
     padding: 0.5rem 1rem;
     border-radius: 25px;
     transition: color 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -34,4 +41,18 @@
 .navbar a.active {
     color: #00e5ff;
     box-shadow: 0 0 15px #00e5ff;
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 768px) {
+    .navbar ul {
+        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
