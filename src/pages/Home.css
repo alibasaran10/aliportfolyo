@@ -1,23 +1,49 @@
 .home-container {
+    height: 100vh;
     background-color: #121212;
     color: #eee;
-    min-height: calc(100vh - 60px); /* Navbar yüksekliği çıkarıldı */
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    padding: 2rem;
     text-align: center;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
-.home-container h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.main-text {
     color: #00bcd4;
+    font-size: 3.5rem;
+    font-weight: 700;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
 }
 
-.home-container p {
-    font-size: 1.2rem;
-    max-width: 600px;
+.sub-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Animasyonlar */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }

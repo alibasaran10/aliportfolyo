@@ -1,59 +1,55 @@
-// src/pages/Contact.js
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import SocialLinks from "../components/SocialLinks"; // doğru yola göre ayarla
+import "./Contact.css";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+    const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-    const handleChange = e => {
-        setFormData({...formData, [e.target.name]: e.target.value});
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Thanks for your message, ${formData.name}!`);
-        setFormData({name: '', email: '', message: ''});
+        alert(
+            `Gönderildi:\nAd Soyad: ${form.name}\nMail: ${form.email}\nİçerik: ${form.message}`
+        );
+        setForm({ name: "", email: "", message: "" });
     };
 
     return (
         <div className="contact-container">
-            <h1>İletişim</h1>
-            <form onSubmit={handleSubmit} className="contact-form">
-                <label>
-                    Ad-Soyad
-                    <input
-                        type="text"
-                        name="Ad Soyad"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        placeholder="Ad Soyad" />
-                </label>
-                <label>
-                    Email
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        placeholder="ornek@gmail.com" />
-                </label>
-                <label>
-                    Message
-                    <textarea
-                        name="Mesaj"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        placeholder="Mesajınızı buraya yazınız..." />
-                </label>
-                <button type="submit">Send</button>
+            <h1>İletişim formu</h1>
+            <form className="contact-form" onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Ad Soyad"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
+                />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Mail"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                />
+                <textarea
+                    name="message"
+                    placeholder="İçerik"
+                    rows="5"
+                    value={form.message}
+                    onChange={handleChange}
+                    required
+                />
+                <button type="submit">Gönder Düğmesi</button>
             </form>
+
+            {/* Sosyal medya linkleri buraya eklendi */}
+            <SocialLinks />
         </div>
     );
 };

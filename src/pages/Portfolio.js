@@ -1,40 +1,42 @@
-// src/pages/Portfolio.js
 import React from 'react';
 import './Portfolio.css';
 
 const projects = [
     {
-        title: 'Project One',
-        description: 'A cool project about React.',
-        link: '#'
+        title: 'Çiftlik Takip Sistemi',
+        description: 'Python ve SQLite veri tabanı kullanarak tasarladığım çiftlik takip sistemi uygulaması.',
+        image: 'foto1.jpg', // buraya kendi görsel uzantını ekleyebilirsin
     },
     {
-        title: 'Project Two',
-        description: 'Another awesome project.',
-        link: '#'
+        title: 'Word Tasarım Uygulaması',
+        description: 'Python ve QtDesigner kullanarak Word benzeri uygulama tasarladım.',
+        image: 'foto2.jpg',
     },
     {
-        title: 'Project Three',
-        description: 'Something creative and useful.',
-        link: '#'
-    }
+        title: 'Arduino ile Tarım Robotu',
+        description: 'Arduino ve Motor sürücüler kullanarak grup halinde tasarladığımız Tarım Robotu.',
+        image: 'foto3.jpg',
+    },
 ];
 
-const Portfolio = () => {
+function Portfolio() {
     return (
         <div className="portfolio-container">
-            <h1>My Portfolio</h1>
-            <div className="projects-grid">
-                {projects.map(({title, description, link}) => (
-                    <div key={title} className="project-card">
-                        <h2>{title}</h2>
-                        <p>{description}</p>
-                        <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
+            <h2 className="portfolio-title">Projelerim</h2>
+            <div className="project-grid">
+                {projects.map((project, index) => (
+                    <div className="project-card" key={index}>
+                        <div className="image-placeholder">
+                            {/* Buraya <img src={project.image} alt={project.title} /> eklersen çalışır */}
+                            <span>Görsel: {project.image}</span>
+                        </div>
+                        <h3>{project.title}</h3>
+                        <p>{project.description}</p>
                     </div>
                 ))}
             </div>
         </div>
     );
-};
+}
 
 export default Portfolio;
